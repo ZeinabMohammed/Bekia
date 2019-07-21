@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block content %}
+<hr>
+<div class="row mb-3">
+	{% if request.GET.q and request.GET.p %}
+
+				<div class='col-12 '>
+
+					Search Results for <strong>{{request.GET.q}}</strong> in <strong>{{request.GET.p}}</strong> :
+				<hr>
+		</div>
+		{% elif request.GET.p %}
+
+				<div class='col-12 '>
+
+					Search Results in <strong>{{request.GET.p}}</strong> :
+				<hr>
+		</div>
+		
+		{% elif request.GET.q %}
+
+				<div class='col-12 '>
+
+					Search Results for <strong>{{request.GET.q}} :
+				    <hr>
+				</div>
+	{% endif %}
+</div>
+
+	<div class="row">
+
+	{% for obj in qs %}
+	
+	<div class="col">
+		
+		<div class="card" style="width: 18rem;">
+	
+	<a href="{{ obj.get_absolute_url}}">
+  	<img src="{{ obj.image.url}}" class="card-img-top" alt="{{ obj.title}} logo"  >
+  	</a>
+
+  <div class="card-body">
+    <h5 class="card-title">{{ obj.title }}</h5>
+    <p class="card-text">{{ obj.description|truncatewords:12 }}.</p>
+    <p class="card-text">{{ obj.location}}</p>
+     <p class="card-text">{{ obj.price }} &#163;</p>
+    <a href="{{ obj.get_absolute_url}}" class="btn btn-primary">View</a> <!-- same as next -->
+  </div>
+</div>
+		{% if forloop.counter|divisibleby:3 %}
+	  	 </div></div>
+	  	 <div class="row"><div class="col-12"><hr></div>
+	   {%  else %}
+           </div>
+	   {% endif %}
+	   
+	
+	{% endfor %}
+</div>
+
+{% endblock %}
