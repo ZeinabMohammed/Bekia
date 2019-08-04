@@ -14,23 +14,21 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-<<<<<<< HEAD
+
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from .views import index, profile, about,safety,terms
-=======
+
 from django.urls import path ,include
 from django.conf import settings
 from django.conf.urls.static import static
 from .views import index, profile
 
->>>>>>> 4d98bca39193d620a5b9a1c491b4bdc575568283
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name="index"),
     path('profile/', profile , name='profile'),
-<<<<<<< HEAD
     path('about/', about , name='about'),
     path('safety/', safety , name='safety'),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
@@ -42,16 +40,9 @@ urlpatterns = [
     # path('', include('search.urls')),
 #     path('add_new_ad/', include('advertise.urls')),
 ]
-if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-=======
-    path('adv/',include('advertisements.urls'))
-]
+
+
 if settings.DEBUG:
     urlpatterns=urlpatterns+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
     urlpatterns=urlpatterns+static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
-
-
->>>>>>> 4d98bca39193d620a5b9a1c491b4bdc575568283

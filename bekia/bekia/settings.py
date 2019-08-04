@@ -37,20 +37,15 @@ DEBUG = True
 # Application definition
 
 INSTALLED_APPS = [
-<<<<<<< HEAD
-    'django.contrib.sites',
-=======
 
- 
->>>>>>> 4d98bca39193d620a5b9a1c491b4bdc575568283
-    'django.contrib.admin',
-    
+    'django.contrib.sites',
+    'django.contrib.admin', 
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-<<<<<<< HEAD
+
     # my apps
     'django_filters',
     'advertise',
@@ -60,11 +55,8 @@ INSTALLED_APPS = [
     'crispy_forms',
     'contact',
     'rest_framework',
-=======
-     'advertisements',
-    'ad.apps.AdConfig',
  
->>>>>>> 4d98bca39193d620a5b9a1c491b4bdc575568283
+
 ]
 
 MIDDLEWARE = [
@@ -91,10 +83,10 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-            ],
-        },
+                                  ],
+                    },
     },
-]
+           ]
 
 WSGI_APPLICATION = 'bekia.wsgi.application'
 
