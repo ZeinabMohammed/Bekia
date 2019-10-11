@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
 from django.template.defaultfilters import slugify
-import django_filters
+# import django_filters
 # from pygments.lexers import get_all_lexers
 # from pygments.styles import get_all_styles
 

@@ -1,0 +1,188 @@
+#off-canvas-menu-toggle span {
+	color: #ffffff;
+    display: none;
+    font-size: 32px;
+    line-height: 95px;
+}
+.off-canvas-menu-open #off-canvas-menu-toggle {
+    display: none;
+}
+#off-canvas-menu .nav > li {
+	float:left;
+	width:100%;
+	margin-top:0;
+}
+#off-canvas-menu .jms-megamenu {
+	box-shadow: none;
+	text-align: left;
+}
+#off-canvas-menu .open > .dropdown-menu {
+    background: #f7f7f7 none repeat scroll 0 0;
+    border: 0 none;
+    box-shadow: none;
+    padding: 0;
+    position: static;
+    width: 100%;
+}
+#off-canvas-menu .open > .dropdown-menu .dropdown-menu {
+    transform: unset;
+    border: 0;
+    opacity: 1;
+    position: unset;
+    box-shadow: unset;
+    width: 100%;
+    padding: 0 0 0 20px;
+    visibility: visible;
+    display: block;
+}
+#off-canvas-menu .dropdown-menu > li > a {
+    font-weight:400;
+    line-height: 35px;
+    padding: 3px 0px 3px 50px;
+    text-transform: capitalize;
+    position: relative;
+}
+#off-canvas-menu .dropdown-menu > li.group > a{
+    font-weight: 600;
+}
+#off-canvas-menu .dropdown-menu > li > a::before {
+    top: 50%;
+    left: 30px;
+    width: 5px;
+    height: 5px;
+    content: '';
+    position: absolute;
+    border-radius: 100%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: #b20f0f;
+    z-index: 2;
+}
+#off-canvas-menu .dropdown-menu > li > a:focus, #off-canvas-menu .dropdown-menu > li > a:hover {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    text-decoration: none;
+}
+#off-canvas-menu li a {
+    border-radius: 0;
+    display: block;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 10px 30px;
+}
+#off-canvas-menu .user-info li a, #off-canvas-menu .languages-info li a,  #off-canvas-menu .currency-info li a{
+    font-weight:400;
+    text-transform: capitalize;
+}
+#off-canvas-menu #jms-megamenu > li > a {
+	text-transform:uppercase;	
+}
+#off-canvas-menu .btn-group .dropdown-menu {
+    background: #0f0f0f none repeat scroll 0 0;
+    left: 0;
+    margin: 1px auto 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 271px;
+}
+#off-canvas-menu .currency-info a , #off-canvas-menu .user-info a, #off-canvas-menu .languages-info a, 
+#off-canvas-menu .currency-info .btn-name{
+    font-size: 14px;
+    font-weight: 600;
+}
+#off-canvas-menu  .btn-group.open {
+    background: #0f0f0f none repeat scroll 0 0;
+}
+#off-canvas-menu .addon-box .btn-group {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#off-canvas-menu #search_widget form {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    display: flex;
+}
+#off-canvas-menu #search_widget form::before{
+    display: none;
+}
+#off-canvas-menu #search_widget button {
+    width: 45px;
+    padding: 0;
+    border: 0;
+    color: #000;
+    display: inline-block;
+    background: transparent;
+}
+#off-canvas-menu #search_widget button i{
+    font-size: 18px;
+}
+#off-canvas-menu #search_widget input {
+    width: 189px;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+    padding-left: 20px;
+    height: 45px;
+    padding: 0 21px;
+    background: transparent;
+}
+#off-canvas-menu #search_widget {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 0 30px;
+}
+#off-canvas-menu .btn-group > ul li span, #off-canvas-menu .btn-group > ul li a {
+    font-size: 13px;
+}
+#off-canvas-menu .btn-group.open .dropdown-menu::before {
+    display: none;
+}
+#off-canvas-menu  .btn-group.open::before {
+    color: #222;
+    content: "";
+    font-family: "fontawesome";
+    line-height: 42px;
+    position: absolute;
+    right: 21px;
+}
+#off-canvas-menu .nav {
+    padding-bottom: 30px;
+}
+#off-canvas-menu .collection.menu-item.mega > ul > li > a{
+    display: none;
+}
+#off-canvas-menu .menu-item.collection > .dropdown-menu::before{
+    display: none;
+}
+#off-canvas-menu .btn-group.currency-info {
+    margin-bottom: 30px;
+}
+.responsive #off-canvas-menu-title {
+    background: none repeat scroll 0 0 #fff;
+    border-bottom: 1px solid #E7E7E7;
+    font-size: 1.23em;
+    line-height: 46px;
+    padding-left: 15px;
+    font-weight:bold;
+}
+.responsive #off-canvas-menu-close {
+    color: #1c2833;
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+    padding: 12px 12px 0 0;
+}
+
+#off-canvas-menu img{
+	max-width:100%;
+	margin-bottom:10px;
+}
+#off-canvas-menu li > a em {
+    float: right;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: right;
+    font-size: 18px;
+}

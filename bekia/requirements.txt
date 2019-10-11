@@ -1,0 +1,9 @@
+django==2.1.5
+djoser
+django-crispy-forms
+whitenoise
+gunicorn
+Pillow
+django-heroku
+djangorestframework
+django-registration==2.4.1
